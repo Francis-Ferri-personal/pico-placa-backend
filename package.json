@@ -1,0 +1,23 @@
+{
+  "name": "pico-placa-backend",
+  "version": "1.0.0",
+  "description": "Backend of the proposed Stack Builders exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francis-Ferri-personal/pico-placa-backend.git"
+  },
+  "keywords": [
+    "pico-placa",
+    "backend"
+  ],
+  "author": "Francis Ferri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Francis-Ferri-personal/pico-placa-backend/issues"
+  },
+  "homepage": "https://github.com/Francis-Ferri-personal/pico-placa-backend#readme"
+}
