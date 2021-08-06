@@ -1,6 +1,6 @@
 import express from "express";
-var cors = require("cors");
 import path from "path";
+import cors from "cors";
 
 export default class Server {
 	public app: express.Application;
@@ -10,6 +10,12 @@ export default class Server {
 		this.port = puerto;
 		this.app = express();
 		this.app.use(cors());
+		this.app.use(express.json());
+		this.app.use(
+			express.urlencoded({
+				extended: true
+			})
+		);
 	}
 
 	static init(puerto: number) {
