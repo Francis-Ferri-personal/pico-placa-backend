@@ -1,4 +1,5 @@
 import express from "express";
+var cors = require("cors");
 import path from "path";
 
 export default class Server {
@@ -8,6 +9,7 @@ export default class Server {
 	constructor(puerto: number) {
 		this.port = puerto;
 		this.app = express();
+		this.app.use(cors());
 	}
 
 	static init(puerto: number) {

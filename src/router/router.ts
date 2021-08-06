@@ -3,10 +3,15 @@ import { Router, Request, Response } from "express";
 const router = Router();
 
 router.post("/pico-placa", (req: Request, res: Response) => {
-	// const id = req.params.id;
+	// license plate number
+	// date
+	// time
+	console.log(req);
+
 	res.status(200).json({
 		ok: true,
 		msg: "Test successful"
+		// can be on the road?
 	});
 });
 

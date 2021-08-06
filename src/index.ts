@@ -1,9 +1,10 @@
 import Server from "./server/server";
 import router from "./router/router";
 
-const server = Server.init(3000);
+const port = Number(process.env.PORT) || 4000;
+const server = Server.init(port);
 server.app.use(router);
 
 server.start(() => {
-	console.log("Server running at port 3000");
+	console.log(`Server running at port ${port}`);
 });
